@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Image Gallery</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script> 
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="title">
@@ -14,7 +14,7 @@
     <div class="gallery">
         <div class="gallery-item">
             <div class="description">
-                <img src="Assets/MissingStockPhoto.jpg" alt="Image 1" onclick="openPopup(0)">
+                <img src="Assets/StockImage1.jpg" alt="Image 1" onclick="openPopup(0)">
                 <h3>Image 1 Title</h3>
                 <p>Description for Image 1</p>
                 <a href="link1.html" class="button-link">Learn More</a>
@@ -23,7 +23,7 @@
         <div class="gallery-item">
             
             <div class="description">
-                <img src="Assets/MissingStockPhoto.jpg" alt="Image 2" onclick="openPopup(1)">
+                <img src="Assets/StockImage2.jpg" alt="Image 2" onclick="openPopup(1)">
                 <h3>Image 2 Title</h3>
                 <p>Description for Image 2</p>
                 <a href="link2.html" class="button-link">Learn More</a>
@@ -31,15 +31,15 @@
         </div>
         <div class="gallery-item">
             <div class="description">
-                <img src="Assets/MissingStockPhoto.jpg" alt="Image 3" onclick="openPopup(2)">
+                <img src="Assets/StockImage3.jpg" alt="Image 3" onclick="openPopup(2)">
                 <h3>Image 3 Title</h3>
                 <p>Description for Image 3</p>
-                <a href="Assets/MissingStockPhoto.jpg" class="button-link">Learn More</a>
+                <a href="link3.html" class="button-link">Learn More</a>
             </div>
         </div>
         <div class="gallery-item">
             <div class="description">
-                <img src="Assets/MissingStockPhoto.jpg" alt="Image 4" onclick="openPopup(3)">
+                <img src="Assets/StockImage4.jpg" alt="Image 4" onclick="openPopup(3)">
                 <h3>Image 4 Title</h3>
                 <p>Description for Image 4</p>
                 <a href="link4.html" class="button-link">Learn More</a>
@@ -47,7 +47,7 @@
         </div>
         <div class="gallery-item">
             <div class="description">
-                <img src="Assets/MissingStockPhoto.jpg" alt="Image 5" onclick="openPopup(4)">
+                <img src="Assets/StockImage5.jpg" alt="Image 5" onclick="openPopup(4)">
                 <h3>Image 5 Title</h3>
                 <p>Description for Image 5</p>
                 <a href="link5.html" class="button-link">Learn More</a>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="popup" id="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
+        <span class="close closeArrowTop" onclick="closePopup()">&times;</span>
         <span class="arrow left" onclick="prevImage()">&#10094;</span>
         <span class="arrow right" onclick="nextImage()">&#10095;</span>
         <div class="popup-content">

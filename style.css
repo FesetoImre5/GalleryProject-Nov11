@@ -63,24 +63,35 @@ body {
     justify-content: center;
     align-items: center;
 }
+.open { 
+    animation: fadeIn 0.5s forwards; 
+    opacity: 1; 
+}
 .popup-content {
     position: relative;
     max-width: 80%;
     max-height: 80%;
 }
 .popup-content img {
-    width: 100%;
+    max-width: 80%;
+    max-height: 20%;
     border-radius: 10px;
 }
 .close, .arrow {
     position: absolute;
-    top: 10px;
     font-size: 30px;
     color: white;
     cursor: pointer;
 }
+.closeArrowTop {
+    top: 10px;
+}
 .close {
     right: 10px;
+}
+.closeX { 
+    animation: fadeOut 0.5s forwards; 
+    opacity: 0; 
 }
 .arrow {
     top: 50%;
@@ -91,4 +102,12 @@ body {
 }
 .arrow.right {
     right: 10px;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }

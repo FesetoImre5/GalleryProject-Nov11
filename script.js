@@ -6,11 +6,17 @@ const popupImage = document.getElementById('popupImage');
 function openPopup(index) {
     currentImageIndex = index;
     popupImage.src = images[index].src;
+    popup.classList.add('open');
+    popup.classList.remove('closeX');
     popup.style.display = 'flex';
 }
 
 function closePopup() {
-    popup.style.display = 'none';
+    popup.classList.remove('open');
+    popup.classList.add('closeX');
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 500);
 }
 
 function prevImage() {
