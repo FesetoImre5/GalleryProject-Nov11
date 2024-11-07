@@ -64,10 +64,89 @@
     <title>Responsive Image Gallery</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <title>Galéria oldal</title>
 </head>
 <body>
-    <div class="title">
-        <h1>Responsive Image Gallery</h1>
+    <div class="header" id="header">
+        <h1>Galéria</h1>
+    </div>
+
+
+
+    <div class="navBar" id="navBar" style="display: flex;">
+        <a href="#">
+            <div>
+                <h3>Contacts</h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div>
+                <h3>About us</h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div>
+                <h3>Account</h3>
+            </div>
+        </a>
+
+        <a href="#">
+            <div>
+                <h3>Help</h3>
+            </div>
+        </a>
+    </div>
+    <div class="openArrow" id="openArrow" onclick="navState(1)" style="display: none;">
+        <img src="Assets/Images/Arrow.webp" alt="Open" id="arrow">
+    </div>
+
+
+
+    <div class="content">
+        <div class="welcome">
+            <h1>Üdvözlünk a Galériában!</h1>
+            <h4>A továbbiakhoz görgess lejjebb</h4>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footerFlex">
+            <div class="footerMain">
+                <div class="contacts">
+                    <h2>Contacts</h2>
+                    <ul>
+                        <li>Phone: +69 69 696 6969</li>
+                        <li>Email: galeria@galeria.gal</li>
+                    </ul>
+                </div>
+                <div class="aboutUs">
+                    <h2>About us</h2>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="usefulLinks">
+                    <h2>Useful links</h2>
+                    <ul>
+                        <li><a href="#">Your account</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <div class="informationMini">
+                    <h1>Galéria</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Galéria</p>
+        <div class="footerJoke">
+            <img src="Assets/Images/Jokes.webp" alt="Joke Image" title="V From MD">
+        </div>
     </div>
     <div class="gallery">
         <div class="gallery-item">
