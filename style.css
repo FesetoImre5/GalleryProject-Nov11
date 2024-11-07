@@ -128,7 +128,7 @@ body{
 
             .informationMini{
                 min-width: 30%;
-                margin: auto 50px;
+                margin: 0px auto;
             }
         }
     }
@@ -151,11 +151,10 @@ body{
     background-color: #8B4513;
     display: flex;
     margin: 15px 0;
-    overflow-x: scroll;
     justify-content: center;
 
     a{
-        margin: 4px 15px 0 15px;
+        margin: 2px 15px 2px 15px;
         display: block;
         min-width: 150px;
         text-decoration: none;
@@ -196,11 +195,40 @@ body{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
+    margin-left: 40px;
 
     img{
         width: 35px;
         height: 35px;
         display: block;
         margin: 0 auto;
+    }
+}
+
+
+
+/*     INDEX     */
+
+
+
+.welcome{
+    text-align: center;
+    margin: 250px auto;
+    color: white;
+    background-color: #8B4513;
+    width: 50%;
+    display: block;
+    padding: 15px 2px;
+    border: 2px solid white;
+    border-radius: 25px;
+
+    h1{
+        margin: 0;
+        font-size: 55px;
+    }
+
+    h4{
+        margin: 0;
+        font-size: 25px;
     }
 }
