@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Galéria oldal</title>
+    <title>Galéria - Account</title>
 </head>
 <body>
     <div class="header" id="header">
@@ -46,58 +46,41 @@
 
 
     <div class="content">
-        <div class="welcome">
-            <h1>Üdvözlünk a Galériában!</h1>
-            <h4>A továbbiakhoz görgess lejjebb</h4>
+        <div class="accountForm" id="account">
+            <h1>Register</h1>
+            <form>
+                <div>
+                    <h3>Username:</h3>
+                    <input type="text" name="username" id="username" class="indent" placeholder="Username">
+                </div>
+                <div>
+                    <h3>Email:</h3>
+                    <input type="email" name="email" id="email" class="indent" placeholder="Email">
+                </div>
+                <div>
+                    <h3>Password:</h3>
+                    <input type="password" name="password" id="password" class="indent" placeholder="Password">
+                </div>
+                <div>
+                    <h3>Birthdate:</h3>
+                    <input type="date" name="birthdate" id="birthdate" class="indent">
+                </div>
+                <div>
+                    <h3>Do you want to recieve notifications on updates and/or products?</h3>
+                    <input type="radio" name="radio" id="Radio" style="margin-left: 25px;">Yes
+                    <input type="radio" name="radio" id="Radio">No
+                </div>
+                <button type="reset" class="submit">Register</button>
+                <div class="right">
+                    <p>Already have an account? <button onclick="Account(1)">Log In</button></p>
+                </div>
+            </form>
         </div>
     </div>
 
 
-    <div class="gallery">
-        <div class="gallery-item">
-            <div class="description">
-                <img src="Assets/StockImage1.jpg" alt="Image 1">
-                <h3>Image 1 Title</h3>
-                <p>Description for Image 1</p>
-                <a href="product.html?index=0" class="button-link">Learn More</a>
-            </div>
-        </div>
-        <div class="gallery-item">
-            <div class="description">
-                <img src="Assets/StockImage2.jpg" alt="Image 2">
-                <h3>Image 2 Title</h3>
-                <p>Description for Image 2</p>
-                <a href="product.html?index=1" class="button-link">Learn More</a>
-            </div>
-        </div>
-        <div class="gallery-item">
-            <div class="description">
-                <img src="Assets/StockImage3.jpg" alt="Image 3">
-                <h3>Image 3 Title</h3>
-                <p>Description for Image 3</p>
-                <a href="product.html?index=2" class="button-link">Learn More</a>
-            </div>
-        </div>
-        <div class="gallery-item">
-            <div class="description">
-                <img src="Assets/StockImage4.jpg" alt="Image 4">
-                <h3>Image 4 Title</h3>
-                <p>Description for Image 4</p>
-                <a href="product.html?index=3" class="button-link">Learn More</a>
-            </div>
-        </div>
-        <div class="gallery-item">
-            <div class="description">
-                <img src="Assets/StockImage5.jpg" alt="Image 5">
-                <h3>Image 5 Title</h3>
-                <p>Description for Image 5</p>
-                <a href="product.html?index=4" class="button-link">Learn More</a>
-            </div>
-        </div>
-    </div>
 
-
-    <div class="footer">
+    <div class="footer" style="position: fixed; bottom: 0;">
         <div class="footerFlex">
             <div class="footerMain">
                 <div class="contacts">
@@ -134,4 +117,3 @@
     </div>
 </body>
 </html>
-

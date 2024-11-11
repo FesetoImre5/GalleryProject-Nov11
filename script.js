@@ -132,6 +132,10 @@ function navState(arg){
         /*MISCELLANEOUS*/
         arrow.style.transform = 'rotate(0deg)';
     }
+
+    if (state > 1){
+        state = 0;
+    }
 }
 
 
@@ -208,4 +212,75 @@ function openPopup(index) {
         </body>
         </html>
     `);
+}
+
+
+
+/*     ACCOUNT     */
+
+
+
+let account = document.getElementById('account');
+let acc = 0;
+
+
+
+function Account(arg){
+    acc += arg;
+
+    if (acc % 2 == 0){
+        account.innerHTML = `
+                            <h1>Register</h1>
+                            <form>
+                                <div>
+                                    <h3>Username:</h3>
+                                    <input type="text" name="username" id="username" class="indent" placeholder="Username">
+                                </div>
+                                <div>
+                                    <h3>Email:</h3>
+                                    <input type="email" name="email" id="email" class="indent" placeholder="Email">
+                                </div>
+                                <div>
+                                    <h3>Password:</h3>
+                                    <input type="password" name="password" id="password" class="indent" placeholder="Password">
+                                </div>
+                                <div>
+                                    <h3>Birthdate:</h3>
+                                    <input type="date" name="birthdate" id="birthdate" class="indent">
+                                </div>
+                                <div>
+                                    <h3>Do you want to recieve notifications on updates and/or products?</h3>
+                                    <input type="radio" name="radio" id="Radio" style="margin-left: 25px;">Yes
+                                    <input type="radio" name="radio" id="Radio">No
+                                </div>
+                                <button type="reset" class="submit">Register</button>
+                                <div class="right">
+                                    <p>Already have an account? <button onclick="Account(1)">Log In</button></p>
+                                </div>
+                            </form>
+                            `
+    }
+    else if (acc % 2 == 1){
+        account.innerHTML = `
+                            <h1>Log in</h1>
+                            <form>
+                                <div>
+                                    <h3>Username or Email:</h3>
+                                    <input type="text" name="username" id="username" class="indent" placeholder="Username/Email">
+                                </div>
+                                <div>
+                                    <h3>Password:</h3>
+                                    <input type="password" name="password" id="password" class="indent" placeholder="Password">
+                                </div>
+                                <button type="reset" class="submit">Log in</button>
+                                <div class="right">
+                                    <p>Don't have an account? <button onclick="Account(1)">Register</button></p>
+                                </div>
+                            </form>
+                            `
+    }
+
+    if (acc > 1){
+        acc = 0;
+    }
 }
