@@ -284,3 +284,41 @@ function Account(arg){
         acc = 0;
     }
 }
+
+/* PRODUCT SRC */
+
+
+function storeProductData(index) {
+    const items = [
+        {
+            src: document.getElementById('image1').src,
+            title: document.getElementById('title1').innerHTML,
+            description: document.getElementById('description1').innerHTML
+        },
+        {
+            src: document.getElementById('image2').src,
+            title: document.getElementById('title2').innerHTML,
+            description: document.getElementById('description2').innerHTML
+        },
+        {
+            src: document.getElementById('image3').src,
+            title: document.getElementById('title3').innerHTML,
+            description: document.getElementById('description3').innerHTML
+        },
+        {
+            src: document.getElementById('image4').src,
+            title: document.getElementById('title4').innerHTML,
+            description: document.getElementById('description4').innerHTML
+        },
+        {
+            src: document.getElementById('image5').src,
+            title: document.getElementById('title5').innerHTML,
+            description: document.getElementById('description5').innerHTML
+        }
+    ];
+
+    const selectedItem = items[index];
+    sessionStorage.setItem('productSrc', selectedItem.src);
+    sessionStorage.setItem('productTitle', selectedItem.title);
+    sessionStorage.setItem('productDescription', selectedItem.description);
+}
