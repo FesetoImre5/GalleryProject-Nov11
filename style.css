@@ -330,8 +330,17 @@ a{
     flex-wrap: wrap;
     justify-content: left;
     margin: 0 auto;
+    overflow-y:hidden; /* This allows scrolling within the div */
 }
 
+/* For truncating text in multiline elements */
+.gallery-item .description p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Adjust this number to control how many lines are shown */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 
 /*     ACCOUNT     */
