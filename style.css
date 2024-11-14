@@ -478,15 +478,15 @@ form{
     border-radius: 25px;
     padding: 15px;
     margin: 25px auto;
-    width: 80%;
+    width: 60%;
     display: block;
 
     h3{
-        margin: 15px 0 0 0;
+        margin: 15px 0 0 5%;
     }
 
     h4{
-        margin: 15px 0 0 0;
+        margin: 15px 0 0 7%;
     }
 
     .troubleType{
@@ -496,6 +496,7 @@ form{
         color: white;
         border: 2px solid white;
         border-radius: 25px;
+        margin: 0 0 0 7%;
     }
     .troubleType:hover{
         background-color: #7e684c;
@@ -507,6 +508,7 @@ form{
         border: 2px solid white;
         font-size: 15px;
         background-color: transparent;
+        margin: 0 0 0 7%;
     }
     .title:hover{
         background-color: #7e684c;
@@ -524,8 +526,23 @@ form{
         max-height: 250px;
         min-width: 125px;
         min-height: 67px;
+        margin: 0 0 0 7%;
     }
     .description:hover{
         background-color: #7e684c;
     }
+}
+
+.send{
+    background-color: #a18766;
+    text-decoration: underline;
+    border: 2px solid white;
+    padding: 5px 10px;
+    width: 150px;
+    border-radius: 10px;
+    display: block;
+    margin: 15px 7%;
+}
+.send:hover{
+    background-color: #7e684c;
 }

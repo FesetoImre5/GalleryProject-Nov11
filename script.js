@@ -154,10 +154,12 @@ function openPopup(index) {
 
     newWindow.document.write(`
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="hu">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <script src="script.js" defer></script>
             <title>${imageTitle}</title>
             <style>
                 body {
@@ -171,7 +173,7 @@ function openPopup(index) {
                     flex: 0 0 40%;
                 }
                 .image-container img {
-                    width: 100%;
+                    width: 500px;
                     border-radius: 10px;
                     border: 2px solid #8B4513;
                 }
@@ -184,6 +186,7 @@ function openPopup(index) {
                 }
                 .description {
                     margin: 10px 0;
+                    padding: 10px 0;
                 }
                 .add-to-cart {
                     display: inline-block;
@@ -202,7 +205,7 @@ function openPopup(index) {
         </head>
         <body>
             <div class="image-container">
-                <img src="${imageSrc}" alt="${imageTitle}">
+                <img src="${imageSrc}" alt="${imageTitle}" style="width: 500px;">
             </div>
             <div class="content">
                 <div class="title">${imageTitle}</div>
