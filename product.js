@@ -22,3 +22,28 @@ if (src && title && description) {
     productTitle.textContent = "Product Not Found";
     productDescription.textContent = "We couldn't find the product details.";
 }
+
+let container = document.getElementById('container');
+let width = window.innerWidth;
+
+window.addEventListener('load' , () => {
+    if (width <= 900){
+        container.style.display = "block";
+        imgcontainer.style.flex = "none";
+    }
+    else if (window.innerWidth > 900){
+        container.style.display = "flex";
+        imgcontainer.style.flex = "0 0 35%";
+    }
+});
+
+window.addEventListener('resize' , () => {
+    if (width <= 900){
+        container.style.display = "block";
+        imgcontainer.style.flex = "none";
+    }
+    else if (window.innerWidth > 900){
+        container.style.display = "flex";
+        imgcontainer.style.flex = "0 0 35%";
+    }
+});
