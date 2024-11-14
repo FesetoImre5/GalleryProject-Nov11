@@ -2,8 +2,10 @@
 
 // Get HTML elements for display
 const productImage = document.getElementById('productImage');
+productImage.style.width = "75%";
 const productTitle = document.getElementById('productTitle');
 const productDescription = document.getElementById('productDescription');
+productDescription.style.padding = "10px 3px";
 
 // Retrieve product data from sessionStorage
 const src = sessionStorage.getItem('productSrc');
